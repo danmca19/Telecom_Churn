@@ -6,10 +6,10 @@ This project presents a complete machine learning pipeline to predict **customer
 
 ## 🗂 Project Structure
 
-- **`PA_Churn_Daniel.ipynb`**  
+- **`Churn_Analysis.ipynb`**  
   Main notebook containing the full churn modeling process: from loading the dataset to final evaluation.
 
-- **`ConfusionMatrix_PA.ipynb`**  
+- **`ConfusionMatrix.ipynb`**  
   Notebook dedicated to **interpreting the confusion matrix**, highlighting the trade-off between precision and recall in churn scenarios.
 
 - **`WA_Fn-UseC_-Telco-Customer-Churn.csv`**  
