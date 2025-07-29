@@ -108,6 +108,15 @@ Based on the specific Confusion Matrix for the Logistic Regression model:
     * **Decision Tree** presented median performance and displayed a tendency towards overfitting.
     * **SVM** largely failed to capture the positive class (zero recall and F1-Score), likely due to a lack of configuration for class imbalance (e.g., missing `class_weight='balanced'` or threshold adjustments).
 
+
+| Modelo                 | Acurácia | Precisão | Recall  | F1-Score | LogLoss | Kappa  | AUC     |
+|------------------------|----------|----------|---------|----------|----------|--------|---------|
+| **Logistic Regression**| 0.8131   | 0.6876   | 0.5714  | **0.6242** | **0.4066** | **0.5012** | **0.8590** |
+| Gradient Boosting      | 0.8045   | 0.6817   | 0.5261  | 0.5939   | 0.4074   | 0.4680 | 0.8564 |
+| Naive Bayes            | 0.6630   | 0.4408   | **0.8955** | 0.5908   | 2.3832   | 0.3565 | 0.8294 |
+| Random Forest          | 0.7956   | 0.6775   | 0.4721  | 0.5565   | 0.4723   | 0.4291 | 0.8380 |
+| Decision Tree          | 0.7354   | 0.5131   | 0.5105  | 0.5118   | 9.5036   | 0.3304 | 0.6655 |
+| SVM (com `prob=True`)  | 0.7283   | **0.0000**| 0.0000  | 0.0000   | 0.4714   | 0.0000 | 0.8059 |
 ---
 
 ### Strategic Business Recommendations:
